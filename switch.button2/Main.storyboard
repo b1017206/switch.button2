@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ddu-po-RZf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="2cd-xG-vJY">
+            <objects>
+                <viewController id="Ddu-po-RZf" customClass="StartViewController" customModule="switch_button2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Rp-zl-7Hg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwitchButton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEX-Xe-4vQ">
+                                <rect key="frame" x="91" y="112" width="232" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="E1g-56-aDb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="45"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naD-Tj-Nt9">
+                                <rect key="frame" x="111" y="551" width="193" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ibO-Of-3Hj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="34"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Start:" destination="NIW-XF-bDl" eventType="touchUpInside" id="FNV-ww-oyd"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Start" id="QW6-B1-G14"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest Win" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MG-NI-1eK">
+                                <rect key="frame" x="28" y="619" width="358" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="ZqI-aF-eRP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lBl-1b-3TG" firstAttribute="bottom" secondItem="5MG-NI-1eK" secondAttribute="bottom" constant="128" id="6GV-bf-5gX"/>
+                            <constraint firstItem="lEX-Xe-4vQ" firstAttribute="centerX" secondItem="6Rp-zl-7Hg" secondAttribute="centerX" id="6bj-df-isi"/>
+                            <constraint firstItem="5MG-NI-1eK" firstAttribute="leading" secondItem="lBl-1b-3TG" secondAttribute="leading" constant="28" id="A9V-Uh-ggm"/>
+                            <constraint firstItem="naD-Tj-Nt9" firstAttribute="centerX" secondItem="lEX-Xe-4vQ" secondAttribute="centerX" id="BMj-2d-rA2"/>
+                            <constraint firstItem="5MG-NI-1eK" firstAttribute="top" secondItem="naD-Tj-Nt9" secondAttribute="bottom" constant="8" id="it8-tk-R0x"/>
+                            <constraint firstItem="lEX-Xe-4vQ" firstAttribute="leading" secondItem="lBl-1b-3TG" secondAttribute="leading" constant="91" id="ojd-iy-9fX"/>
+                            <constraint firstItem="naD-Tj-Nt9" firstAttribute="centerX" secondItem="5MG-NI-1eK" secondAttribute="centerX" id="wcw-eQ-XuJ"/>
+                            <constraint firstItem="lEX-Xe-4vQ" firstAttribute="top" secondItem="lBl-1b-3TG" secondAttribute="top" constant="112" id="zdo-Ub-MXD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lBl-1b-3TG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rbH-tp-laE"/>
+                    <connections>
+                        <outlet property="Highest" destination="5MG-NI-1eK" id="F7B-eH-lkt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QtH-oG-Bdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NIW-XF-bDl" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-672.46376811594212" y="132.58928571428572"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="switch_button2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Acquisition amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiV-aM-53S">
+                                <rect key="frame" x="0.0" y="125" width="414" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="bQ9-Fe-2n2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqu-oj-ZC6">
+                                <rect key="frame" x="0.0" y="194.5" width="414" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="W7O-72-btx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y68-JM-dj8">
+                                <rect key="frame" x="123" y="578" width="176" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="z97-94-y2t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="27"/>
+                                <state key="normal" title="RETIRE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="RetireButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rd2-P4-Rmd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9q-qC-gW9">
+                                <rect key="frame" x="86" y="289" width="251" height="223"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="174"/>
+                                <state key="normal" title="🔴"/>
+                                <connections>
+                                    <action selector="UpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2NW-w5-N4o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y68-JM-dj8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="1ij-B7-zwu"/>
+                            <constraint firstItem="Y68-JM-dj8" firstAttribute="top" secondItem="o9q-qC-gW9" secondAttribute="bottom" constant="66" id="1o8-mn-yDU"/>
+                            <constraint firstItem="HiV-aM-53S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3P6-2y-poK"/>
+                            <constraint firstItem="HiV-aM-53S" firstAttribute="trailing" secondItem="Yqu-oj-ZC6" secondAttribute="trailing" id="5Sy-uZ-iBz"/>
+                            <constraint firstItem="HiV-aM-53S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="125" id="6q9-cK-WgV"/>
+                            <constraint firstItem="HiV-aM-53S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Cb-8N-hxo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o9q-qC-gW9" secondAttribute="trailing" constant="77" id="BOX-ic-FyB"/>
+                            <constraint firstItem="Yqu-oj-ZC6" firstAttribute="top" secondItem="HiV-aM-53S" secondAttribute="bottom" constant="21.5" id="Msa-sw-ytY"/>
+                            <constraint firstItem="o9q-qC-gW9" firstAttribute="centerX" secondItem="Y68-JM-dj8" secondAttribute="centerX" id="TWC-3c-coW"/>
+                            <constraint firstItem="o9q-qC-gW9" firstAttribute="top" secondItem="Yqu-oj-ZC6" secondAttribute="bottom" constant="60.5" id="dbe-jK-of6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y68-JM-dj8" secondAttribute="bottom" constant="185" id="fFd-Mg-Jeh"/>
+                            <constraint firstItem="HiV-aM-53S" firstAttribute="leading" secondItem="Yqu-oj-ZC6" secondAttribute="leading" id="h8C-In-ul0"/>
+                            <constraint firstItem="o9q-qC-gW9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="rLg-D3-1ov"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="kinngaku" destination="Yqu-oj-ZC6" id="qJs-7h-vwf"/>
+                        <segue destination="sj1-EN-cis" kind="show" identifier="dead" id="uFQ-GV-tjD"/>
+                        <segue destination="gNm-i6-Gvl" kind="show" identifier="retire" id="RwU-2n-HOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+        <!--Dead View Controller-->
+        <scene sceneID="ZWs-ct-deH">
+            <objects>
+                <viewController id="sj1-EN-cis" customClass="DeadViewController" customModule="switch_button2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kE9-A1-F8H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dead" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3P8-wU-iCh">
+                                <rect key="frame" x="0.0" y="200" width="414" height="65"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="51"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDs-PI-b1l">
+                                <rect key="frame" x="158" y="518" width="98" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="32"/>
+                                <state key="normal" title="top">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ddu-po-RZf" kind="show" id="amS-mk-9mY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3P8-wU-iCh" firstAttribute="top" secondItem="cyo-h4-r3J" secondAttribute="top" constant="200" id="2UI-r7-x8h"/>
+                            <constraint firstItem="3P8-wU-iCh" firstAttribute="leading" secondItem="cyo-h4-r3J" secondAttribute="leading" id="IVE-jf-hu7"/>
+                            <constraint firstItem="3P8-wU-iCh" firstAttribute="centerX" secondItem="kE9-A1-F8H" secondAttribute="centerX" id="gdY-Oy-VKS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cyo-h4-r3J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kz4-32-CYx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ziP-kx-KPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="-587.27678571428567"/>
+        </scene>
+        <!--Retire View Controller-->
+        <scene sceneID="H1L-4e-AOH">
+            <objects>
+                <viewController id="gNm-i6-Gvl" customClass="RetireViewController" customModule="switch_button2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0HK-hP-Ih9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJk-dh-rlf">
+                                <rect key="frame" x="113" y="163" width="188" height="45.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45.5" id="sIA-rS-Rys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Acquisition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-AU-DfR">
+                                <rect key="frame" x="63" y="95" width="289" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="npy-55-36X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-ud-0D7">
+                                <rect key="frame" x="163" y="356" width="108" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="35"/>
+                                <state key="normal" title="top">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="topButton:" destination="gNm-i6-Gvl" eventType="touchUpInside" id="wRl-gI-12u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FNp-AU-DfR" firstAttribute="top" secondItem="JnJ-aY-hXe" secondAttribute="top" constant="95" id="7Gk-BL-xZr"/>
+                            <constraint firstItem="FNp-AU-DfR" firstAttribute="centerX" secondItem="NJk-dh-rlf" secondAttribute="centerX" id="JSF-rk-Cov"/>
+                            <constraint firstItem="FNp-AU-DfR" firstAttribute="centerX" secondItem="0HK-hP-Ih9" secondAttribute="centerX" id="T0A-2F-rgo"/>
+                            <constraint firstItem="NJk-dh-rlf" firstAttribute="leading" secondItem="JnJ-aY-hXe" secondAttribute="leading" constant="113" id="Xil-ZT-s3g"/>
+                            <constraint firstItem="FNp-AU-DfR" firstAttribute="leading" secondItem="JnJ-aY-hXe" secondAttribute="leading" constant="63" id="dwe-95-GAF"/>
+                            <constraint firstItem="NJk-dh-rlf" firstAttribute="top" secondItem="FNp-AU-DfR" secondAttribute="bottom" constant="40" id="fen-NF-9Bb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JnJ-aY-hXe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bfq-nL-7kv"/>
+                    <connections>
+                        <outlet property="kakutoku" destination="NJk-dh-rlf" id="MmF-xa-y8r"/>
+                        <segue destination="Ddu-po-RZf" kind="show" identifier="top" id="xTf-Zu-bqn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkj-DF-6h0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="840"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xTf-Zu-bqn"/>
+    </inferredMetricsTieBreakers>
+</document>
